@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>Brain Website</title>
+
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  
+</head>
+      
+<body>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <!-- <form class="navbar-form" role="search">
+          <div class="form-group"> 
+            <input type="text" class="form-control" placeholder="artist" name="artist" id="artist">
+      
+            <input type="text" class="form-control" placeholder="city" name="city" id="city">
+          </div>
+            <button type="submit" class="btn btn-default" id="search-shows">Search</button>
+         </form> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/writers_studio">Writers Studio</a></li>
+        <li><a href="/stories">Stories</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% block content %} put your content here {% endblock %}
+
+</body>
+      
+</html>
